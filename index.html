@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>household-agent</title>
+<style>
+  :root { --bg:#fbfaf8; --fg:#23211e; --muted:#6b6660; --rule:#e5e1db; --link:#7a3f1d; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#171614; --fg:#e8e4de; --muted:#9a948b; --rule:#312e2a; --link:#d9a273; }
+  }
+  * { box-sizing: border-box; }
+  body { background:var(--bg); color:var(--fg); margin:0;
+         font:17px/1.65 ui-serif, Georgia, "Times New Roman", serif; }
+  main { max-width:37rem; margin:0 auto; padding:4rem 16px 6rem; }
+  h1 { font-size:1.7rem; letter-spacing:-.01em; margin:0 0 .25rem; }
+  .sub { color:var(--muted); font-size:.95rem; margin:0 0 2.5rem; }
+  h2 { font-size:1.05rem; margin:2.5rem 0 .6rem; }
+  p { margin:0 0 1rem; }
+  a { color:var(--link); }
+  ul { padding-left:1.1rem; margin:0 0 1rem; }
+  li { margin-bottom:.4rem; }
+  footer { margin-top:3.5rem; padding-top:1.25rem; border-top:1px solid var(--rule);
+           color:var(--muted); font-size:.9rem; }
+</style>
+</head>
+<body>
+<main>
+  <h1>household-agent</h1>
+  <p class="sub">A private calendar assistant for one household.</p>
+
+  <p>household-agent is a small personal program that reads its owner's Google Calendar
+     and sends a short daily preview and a weekly summary to a private chat shared by the
+     two adults in one household.</p>
+
+  <p>It is not a product. It is not offered to anyone else, there is no sign-up, and it has
+     no users beyond the two people it was written for.</p>
+
+  <h2>What it does</h2>
+  <ul>
+    <li>Reads calendar events for the week ahead.</li>
+    <li>Sends a plain-text summary — titles, times and dates only — to a private chat.</li>
+    <li>Points out gaps, such as a night with no childcare arranged.</li>
+  </ul>
+
+  <h2>What it does not do</h2>
+  <ul>
+    <li>It does not change, create or delete calendar events.</li>
+    <li>It does not send invitations or email anyone.</li>
+    <li>It does not share anything it reads with anybody outside the household.</li>
+  </ul>
+
+  <p>It runs on a single personal computer, not on a server, and it holds its credentials
+     in files that only it can read.</p>
+
+  <footer>
+    <a href="privacy.html">Privacy policy</a> &middot;
+    <a href="mailto:jfox1126@gmail.com">jfox1126@gmail.com</a>
+  </footer>
+</main>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>household-agent — privacy policy</title>
+<style>
+  :root { --bg:#fbfaf8; --fg:#23211e; --muted:#6b6660; --rule:#e5e1db; --link:#7a3f1d; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#171614; --fg:#e8e4de; --muted:#9a948b; --rule:#312e2a; --link:#d9a273; }
+  }
+  * { box-sizing: border-box; }
+  body { background:var(--bg); color:var(--fg); margin:0;
+         font:17px/1.65 ui-serif, Georgia, "Times New Roman", serif; }
+  main { max-width:37rem; margin:0 auto; padding:4rem 16px 6rem; }
+  h1 { font-size:1.7rem; letter-spacing:-.01em; margin:0 0 .25rem; }
+  .sub { color:var(--muted); font-size:.95rem; margin:0 0 2.5rem; }
+  h2 { font-size:1.05rem; margin:2.5rem 0 .6rem; }
+  p { margin:0 0 1rem; }
+  a { color:var(--link); }
+  ul { padding-left:1.1rem; margin:0 0 1rem; }
+  li { margin-bottom:.4rem; }
+  footer { margin-top:3.5rem; padding-top:1.25rem; border-top:1px solid var(--rule);
+           color:var(--muted); font-size:.9rem; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Privacy policy</h1>
+  <p class="sub">household-agent &middot; last updated 17 September 2026</p>
+
+  <p>household-agent is a private program used by the two adults of a single household.
+     It is not offered to the public and has no other users. This policy describes what it
+     reads, where that goes, and how to stop it.</p>
+
+  <h2>What it accesses</h2>
+  <p>With the account holder's consent, household-agent reads Google Calendar events using
+     the <code>calendar.events.readonly</code> scope. That permission is read-only: the
+     program cannot create, change or delete any event, and it requests no other Google
+     permission.</p>
+  <p>From each event it uses the title, the start and end times, whether the event lasts all
+     day, whether it is marked busy or free, and whether invitees have replied. It does not
+     use event descriptions, locations or conference links.</p>
+
+  <h2>Where the information goes</h2>
+  <ul>
+    <li>Calendar information is processed on one personal computer and written to a
+        database on that computer.</li>
+    <li>Summaries are sent to a private chat readable only by the two adults in the
+        household.</li>
+    <li>Nothing is sold, published, used for advertising, or shared with anyone outside
+        the household.</li>
+    <li>A future version will send limited event text to Anthropic, which provides the
+        language model used to phrase summaries. Both adults will be told before that
+        happens, and neither the current version nor any version sends calendar
+        information to any other third party.</li>
+  </ul>
+
+  <h2>How long it is kept</h2>
+  <p>Calendar information is kept only as long as it is needed for the current and upcoming
+     week, and records of what the program has sent are kept so it does not repeat itself.
+     Deleting the program's database removes everything it holds.</p>
+
+  <h2>Credentials</h2>
+  <p>The access credential is stored in a file on the computer that only the program's own
+     restricted account can read. It is never displayed, logged or transmitted anywhere
+     except to Google when requesting calendar data.</p>
+
+  <h2>Withdrawing access</h2>
+  <p>The account holder can revoke household-agent's access at any time, with immediate
+     effect, from the Google Account permissions page at
+     <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.
+     No request to us is needed. Once revoked, the program can no longer read anything.</p>
+
+  <h2>Contact</h2>
+  <p><a href="mailto:jfox1126@gmail.com">jfox1126@gmail.com</a></p>
+
+  <footer><a href="index.html">&larr; household-agent</a></footer>
+</main>
+</body>
+</html>
