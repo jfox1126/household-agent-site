@@ -43,15 +43,22 @@
     <li>Points out gaps, such as a night with no childcare arranged.</li>
   </ul>
 
-  <h2>What it does not do</h2>
+  <h2>What it will and will not do</h2>
   <ul>
-    <li>It does not change, create or delete calendar events.</li>
-    <li>It does not send invitations or email anyone.</li>
-    <li>It does not share anything it reads with anybody outside the household.</li>
+    <li>It creates a calendar event only when one of the two adults presses a button to
+        confirm it, never on its own.</li>
+    <li>It removes an event only if it created that event and a person presses a button to
+        undo it. It never changes or removes any other event.</li>
+    <li>It never adds guests to an event, so it never sends an invitation.</li>
+    <li>The only text it sends to Anthropic, which provides its language model, is text a
+        person has deliberately sent it. It does not send calendar events to Anthropic.</li>
+    <li>Beyond that, it shares nothing with anybody outside the household except Telegram,
+        which carries the chat, and Google, which holds the calendar.</li>
   </ul>
 
-  <p>It runs on a single personal computer, not on a server, and it holds its credentials
-     in files that only it can read.</p>
+  <p>It runs on a single personal computer, and it keeps its credentials in files that only
+     the program and its owner can read. If it stops running, a small watcher on Google's
+     servers emails its owner. The watcher receives no calendar or message content.</p>
 
   <footer>
     <a href="privacy.html">Privacy policy</a> &middot;
