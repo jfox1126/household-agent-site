@@ -27,50 +27,59 @@
 <body>
 <main>
   <h1>Privacy policy</h1>
-  <p class="sub">household-agent &middot; last updated 17 September 2026</p>
+  <p class="sub">household-agent &middot; last updated 24 September 2026</p>
 
   <p>household-agent is a private program used by the two adults of a single household.
      It is not offered to the public and has no other users. This policy describes what it
-     reads, where that goes, and how to stop it.</p>
+     reads, what it may create, where information goes, and how to stop it.</p>
 
   <h2>What it accesses</h2>
-  <p>With the account holder's consent, household-agent reads Google Calendar events using
-     the <code>calendar.events.readonly</code> scope. That permission is read-only: the
-     program cannot create, change or delete any event, and it requests no other Google
-     permission.</p>
-  <p>From each event it uses the title, the start and end times, whether the event lasts all
-     day, whether it is marked busy or free, and whether invitees have replied. It does not
-     use event descriptions, locations or conference links.</p>
+  <p>With the account holder's consent, household-agent may hold two Google Calendar
+     permissions: <code>calendar.events.readonly</code>, which lets it read events, and
+     <code>calendar.events</code>, which also lets it create, change and delete them. It
+     requests no other Google permission.</p>
+  <p>It creates an event only when one of the two adults presses a button to confirm it,
+     never on its own, and only on the one calendar it is set up to use. It deletes an event
+     only if it created that event and a person presses a button to undo it. It never changes
+     or deletes any other event, and it never adds guests, so it never sends an
+     invitation.</p>
+  <p>From each event it reads, it uses the title, the start and end times, whether the event
+     lasts all day, whether it is marked busy or free, and whether invitees have replied. It
+     does not use event descriptions, locations or conference links.</p>
 
   <h2>Where the information goes</h2>
   <ul>
-    <li>Calendar information is processed on one personal computer and written to a
-        database on that computer.</li>
-    <li>Summaries are sent to a private chat readable only by the two adults in the
-        household.</li>
-    <li>Nothing is sold, published, used for advertising, or shared with anyone outside
-        the household.</li>
-    <li>A future version will send limited event text to Anthropic, which provides the
-        language model used to phrase summaries. Both adults will be told before that
-        happens, and neither the current version nor any version sends calendar
-        information to any other third party.</li>
+    <li>The program runs on one personal computer, and its database is on that
+        computer.</li>
+    <li>Summaries and replies are sent through Telegram to chats readable only by the two
+        adults in the household.</li>
+    <li>Text a person deliberately sends it goes to Anthropic, which provides the language
+        model that reads it. Calendar events are not sent to Anthropic.</li>
+    <li>An event it creates is stored by Google on the calendar, like any other event.</li>
+    <li>Nothing is sold, published or used for advertising, and nothing is shared with
+        anyone else.</li>
   </ul>
 
   <h2>How long it is kept</h2>
-  <p>Calendar information is kept only as long as it is needed for the current and upcoming
-     week, and records of what the program has sent are kept so it does not repeat itself.
-     Deleting the program's database removes everything it holds.</p>
+  <p>Calendar events are read when they are needed and are not stored; the program keeps a
+     record of what it has sent so it does not repeat itself. Text a person sends it may be
+     kept on the computer, with a record of what was done with it, until its owner deletes it.
+     Deleting the program's database removes everything it has recorded. Events it has
+     created stay on the calendar, like any other event, until someone deletes them.</p>
 
   <h2>Credentials</h2>
-  <p>The access credential is stored in a file on the computer that only the program's own
-     restricted account can read. It is never displayed, logged or transmitted anywhere
-     except to Google when requesting calendar data.</p>
+  <p>Its credentials are stored in files on the computer that only the program and its owner
+     can read. Each is sent only to the service that issued it, and none is displayed or
+     logged.</p>
 
   <h2>Withdrawing access</h2>
   <p>The account holder can revoke household-agent's access at any time, with immediate
      effect, from the Google Account permissions page at
      <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.
-     No request to us is needed. Once revoked, the program can no longer read anything.</p>
+     No request to us is needed. Once revoked, the program can no longer read or change the
+     calendar.</p>
+  <p>Either adult can stop it sending anything by sending <code>/stop</code> in the
+     chat.</p>
 
   <h2>Contact</h2>
   <p><a href="mailto:jfox1126@gmail.com">jfox1126@gmail.com</a></p>
