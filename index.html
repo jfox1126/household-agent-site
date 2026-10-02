@@ -51,9 +51,12 @@
         undo it. It never changes or removes any other event.</li>
     <li>It never adds guests to an event, so it never sends an invitation.</li>
     <li>The only text it sends to Anthropic, which provides its language model, is text a
-        person has deliberately sent it. It does not send calendar events to Anthropic.</li>
+        person has deliberately sent it. It does not send calendar events or email to
+        Anthropic.</li>
+    <li>It may read its owner's own email, and today only counts it. It cannot send,
+        change or delete email.</li>
     <li>Beyond that, it shares nothing with anybody outside the household except Telegram,
-        which carries the chat, and Google, which holds the calendar.</li>
+        which carries the chat, and Google, which holds the calendar and the email.</li>
   </ul>
 
   <p>It runs on a single personal computer, and it keeps its credentials in files that only
