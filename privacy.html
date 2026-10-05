@@ -27,7 +27,7 @@
 <body>
 <main>
   <h1>Privacy policy</h1>
-  <p class="sub">household-agent &middot; last updated 2 October 2026</p>
+  <p class="sub">household-agent &middot; last updated 5 October 2026</p>
 
   <p>household-agent is a private program used by the two adults of a single household.
      It is not offered to the public and has no other users. This policy describes what it
@@ -39,7 +39,9 @@
      <code>calendar.events</code>, which also lets it create, change and delete them. For its
      owner's own Gmail accounts, and no one else's, it may also hold
      <code>gmail.readonly</code>, which lets it read email but not send, change or delete
-     any. It requests no other Google permission.</p>
+     any. On its owner's services account only, it may also hold <code>gmail.send</code>,
+     which lets it send email but not read, change or delete any. It requests no other
+     Google permission.</p>
   <p>It creates an event only when one of the two adults presses a button to confirm it,
      never on its own, and only on the one calendar it is set up to use. It deletes an event
      only if it created that event and a person presses a button to undo it. It never changes
@@ -50,8 +52,12 @@
      does not use event descriptions, locations or conference links.</p>
   <p>Today it uses email only to count it: how many messages arrived in a week, of what
      kind, and how many are still waiting on a reply. No email, sender, subject or text is
-     stored, shown in a chat, or sent to anyone. Before it uses email for anything more, this
-     page will say what, and the change will be dated.</p>
+     stored, shown in a chat, or sent to anyone.</p>
+  <p>It sends email to one address only: a personal assistant service its owner uses and
+     chose. Today it sends that service test questions its owner approved, and counts how and
+     when the service replies. It sends nothing from the household's calendars, chats or
+     email. Before it uses email for anything more, this page will say what, and the change
+     will be dated.</p>
 
   <h2>Where the information goes</h2>
   <ul>
@@ -62,6 +68,8 @@
     <li>Text a person deliberately sends it goes to Anthropic, which provides the language
         model that reads it. Calendar events and email are not sent to Anthropic.</li>
     <li>An event it creates is stored by Google on the calendar, like any other event.</li>
+    <li>Test questions its owner approved are emailed to the one personal assistant service
+        its owner chose.</li>
     <li>Nothing is sold, published or used for advertising, and nothing is shared with
         anyone else.</li>
   </ul>
