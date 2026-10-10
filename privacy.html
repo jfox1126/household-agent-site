@@ -27,7 +27,7 @@
 <body>
 <main>
   <h1>Privacy policy</h1>
-  <p class="sub">household-agent &middot; last updated 9 October 2026</p>
+  <p class="sub">household-agent &middot; last updated 10 October 2026</p>
 
   <p>household-agent is a private program used by the two adults of a single household.
      It is not offered to the public and has no other users. This policy describes what it
@@ -58,11 +58,18 @@
      in a chat, or sent to anyone.</p>
   <p>It sends email to one address only: a personal assistant service its owner uses and
      chose. When an adult it is set up to accept asks it something it cannot do itself, it
-     emails that service the one line that was typed, with the first names of the adults
-     who will see the answer. Each question gets its own email thread. It shows the
+     emails that service the line that was typed, with the first names of the adults
+     who will see the answer. Since 10 October 2026, for an errand it adds a short summary
+     the language model writes: what it is for, the details given, and any it lacks. If one
+     it needs is missing, such as a time, it first asks that adult once, in the same chat;
+     the answer goes in the same email, and if none comes within a day, the errand is
+     dropped and none of it is sent; a later answer is read as a new message.
+     The summary is not checked word for word against what was typed, so it may carry
+     something the model read in the recent conversation or the to-do list. Each question
+     gets its own email thread. It shows the
      service's reply in the chat where the question was asked, and does not keep the reply.
-     It sends nothing else from the household's calendars, chats or
-     email.</p>
+     Beyond that line, its answer and the summary, it sends nothing else from the
+     household's calendars, chats or email.</p>
   <p>Since 9 October 2026, its owner may also set it to keep a standing watch with that
      service: it emails the service a written brief of what to look for in its owner's school
      email, once, and again only if the brief changes or a send did not go through. The
@@ -88,8 +95,12 @@
         iMessage chat with it, where for now it answers only a request to stop.</li>
     <li>Each line either adult types in the household's group chats or in their own
         Telegram chat with it, and each picture sent there, goes to Anthropic, which provides the language model that decides whether it is
-        meant for the program and what it asks. The household's open to-do list goes with
-        it. Calendar events and email are not sent to Anthropic.</li>
+        meant for the program and what it asks. With a typed line go the household's to-do
+        list, each adult's own items included, open ones and recent ones closed in the past week;
+        the last half hour of that chat's lines the program answered, and its own replies,
+        with the adults' names taken out of the replies (in the group both adults' lines, in
+        an adult's own chat only theirs); and any errand that adult is still answering a
+        question about there. Calendar events and email are not sent to Anthropic.</li>
     <li>An event it creates is stored by Google on the calendar, like any other event.</li>
     <li>Questions it cannot answer itself are emailed to the one personal assistant service
         its owner chose, and that service's replies are shown in the chat.</li>
@@ -105,7 +116,11 @@
      is shown, or when a watch's reply is checked, and its text is not stored; a watch keeps
      its replies' reference numbers for about a week. Text a person sends it may be
      kept on the computer, with a record of what was done with it, until its owner deletes it.
-     Each chat line, as it arrives, is also kept on the computer for two days. Deleting the
+     Each chat line, as it arrives, is also kept on the computer for two days. The lines it
+     answers, and its own replies to them, are kept for half an hour so it can follow a
+     conversation, then deleted. An errand it has asked a question about keeps its words
+     and summary until it is answered, replaced or dropped, after about a day. A copy made at an update keeps
+     whatever was held at that moment. Deleting the
      program's database, and the copies of it kept from its last five updates, removes
      everything it has recorded. Events it has
      created stay on the calendar, like any other event, until someone deletes them.</p>
