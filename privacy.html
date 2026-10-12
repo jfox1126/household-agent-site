@@ -27,7 +27,7 @@
 <body>
 <main>
   <h1>Privacy policy</h1>
-  <p class="sub">household-agent &middot; last updated 10 October 2026</p>
+  <p class="sub">household-agent &middot; last updated 12 October 2026</p>
 
   <p>household-agent is a private program used by the two adults of a single household.
      It is not offered to the public and has no other users. This policy describes what it
@@ -46,7 +46,10 @@
   <p>It creates an event only on the one shared calendar it is set up to use, and only when
      one of the two adults asks for it: by typing or pasting the event to it, which adds it
      at once with a way to undo it, or by saying yes to an event it read from a picture they
-     sent, or by pressing a button to confirm it. It never creates an event on its own. It
+     sent, or by pressing a button to confirm it. Since 12 October 2026, for an errand an
+     adult asked for, it also adds the booking the assistant service confirms when it is for
+     the day and time asked, at once with a way to undo it; a booking for another day or time
+     is added only if the person who asked says yes. It never creates an event on its own. It
      deletes an event only if it created that event and a person undoes it. It never changes
      or deletes any other event, and it never adds guests, so it never sends an
      invitation.</p>
@@ -54,20 +57,30 @@
      lasts all day, whether it is marked busy or free, whether invitees have replied, whether it is
      tentative or private, and whether the calendar's owner organized it. It does not use
      event descriptions, locations or conference links.</p>
+  <p>Since 12 October 2026, its owner may also set the childcare offer: once a week, in the
+     iMessage group chat, it points out hours next week when neither adult is free and no one
+     is booked to look after the children; again if they grow, and on the Friday before if they
+     are still open and no one said no; and it stops once the calendar shows them covered. For
+     this it keeps those hours, worked out from the calendars without their titles, who
+     answered, and the reference of the calendar event that covered them. A yes from either
+     adult puts a text for the nanny in that adult's own chat to copy and send; it never
+     messages the nanny.</p>
   <p>It reads none of its owner's email except the threads it started, described next. No other email, sender, subject or text is read, stored, shown
      in a chat, or sent to anyone.</p>
   <p>It sends email to one address only: a personal assistant service its owner uses and
      chose. When an adult it is set up to accept asks it something it cannot do itself, it
      emails that service the line that was typed, with the first names of the adults
      who will see the answer. Since 10 October 2026, for an errand it adds a short summary
-     the language model writes: what it is for, the details given, and any it lacks. If one
+     the language model writes: what it is for, when, the details given, and any it lacks,
+     with a fixed note on how to reply as the errand moves. If one
      it needs is missing, such as a time, it first asks that adult once, in the same chat;
      the answer goes in the same email, and if none comes within a day, the errand is
      dropped and none of it is sent; a later answer is read as a new message.
      The summary is not checked word for word against what was typed, so it may carry
      something the model read in the recent conversation or the to-do list. Each question
-     gets its own email thread. It shows the
-     service's reply in the chat where the question was asked, and does not keep the reply.
+     gets its own email thread. It shows the service's reply, and for an errand each one, in the
+     chat where the question was asked, and keeps none of their text, except a booking's day, time and
+     place, which it keeps to add the booking to the calendar.
      Beyond that line, its answer and the summary, it sends nothing else from the
      household's calendars, chats or email.</p>
   <p>Since 9 October 2026, its owner may also set it to keep a standing watch with that
@@ -92,7 +105,8 @@
         chats readable only by the two adults in the household and the program's own
         account: the household's group, and each adult's own chat with it, for what is
         meant for that adult alone. Since 9 October 2026 that includes each adult's own
-        iMessage chat with it, where for now it answers only a request to stop.</li>
+        iMessage chat with it, where it answers a request to stop and, if the childcare offer
+        is set, gets the text to copy.</li>
     <li>Each line either adult types in the household's group chats or in their own
         Telegram chat with it, and each picture sent there, goes to Anthropic, which provides the language model that decides whether it is
         meant for the program and what it asks. With a typed line go the household's to-do
@@ -111,15 +125,22 @@
   </ul>
 
   <h2>How long it is kept</h2>
-  <p>Calendar events are read when they are needed and are not stored; the program keeps a
+  <p>Calendar events are read when they are needed and are not stored, except, when the
+     childcare offer is set, the uncovered hours and the covering event's reference, kept
+     until its owner deletes them; the program keeps a
      record of what it has sent so it does not repeat itself. Email is read when a reply
-     is shown, or when a watch's reply is checked, and its text is not stored; a watch keeps
-     its replies' reference numbers for about a week. Text a person sends it may be
+     is shown, or when a watch's reply is checked, and its text is not stored, except a
+     booking's day, time and place, kept with the record of what it added to the calendar;
+     it keeps each errand reply's reference number and what it said it was (proposed,
+     waiting, booked) until its owner deletes them, and a watch keeps its replies' reference numbers for about a week.
+     Text a person sends it, and bookings it adds, may be
      kept on the computer, with a record of what was done with it, until its owner deletes it.
      Each chat line, as it arrives, is also kept on the computer for two days. The lines it
      answers, and its own replies to them, are kept for half an hour so it can follow a
      conversation, then deleted. An errand it has asked a question about keeps its words
-     and summary until it is answered, replaced or dropped, after about a day. A copy made at an update keeps
+     and summary until it is answered, replaced or dropped, after about a day. Once an errand
+     is sent, it keeps what it is for and when until it is booked, when it stays with the
+     booking, or closed, about a day after it was sent or the service last replied. A copy made at an update keeps
      whatever was held at that moment. Deleting the
      program's database, and the copies of it kept from its last five updates, removes
      everything it has recorded. Events it has
